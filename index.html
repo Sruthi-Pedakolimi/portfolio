@@ -15,35 +15,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW9HFSZ3"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="logo">Sruthi Pedakolimi</div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
             </ul>
         </nav>
     </header>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-grid">
                 <img src="https://sruthi-pedakolimi.github.io/portfolio/assets/images/profile-pic.jpg" alt="Ramya Sruthi Pedakolimi" class="profile-photo">
-                
                 <div class="hero-content">
                     <h1 class="hero-title">Ramya Sruthi Pedakolimi</h1>
-                    <p class="hero-subtitle">Full Stack Developer</p>
-                    <p class="hero-description">Computer Science graduate student specializing in building scalable web applications with modern technologies. Experienced in Python, JavaScript, Django, and React.</p>
-                    
+                    <p class="hero-subtitle">Full Stack | Front-End | Back-End</p>
+                    <p class="hero-description">Led by curiosity, fueled by impact, grounded in clean code.</p>
                     <div class="contact-icons">
                         <a href="mailto:ramyasruthi.pedakolimi@gmail.com" class="contact-icon" title="Email" target="_blank">
                             <i class="fas fa-envelope"></i>
@@ -58,7 +58,6 @@
                             <i class="fas fa-file-pdf"></i>
                         </a>
                     </div>
-                    
                     <div class="cta-section">
                         <a href="#projects" class="btn-primary">View My Work</a>
                         <a href="#about" class="btn-secondary">Learn More</a>
@@ -67,99 +66,174 @@
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section class="section" id="about">
         <div class="section-header">
-            <h2 class="section-title">💻 About Me</h2>
-            <p class="section-subtitle">Passionate about creating efficient, scalable solutions through clean code and thoughtful design</p>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate about creating impactful digital solutions through clean code and innovative thinking</p>
         </div>
-        
-            <div class="about-content">
-                <p>I'm a <span class="highlight">full stack developer</span> with a passion for building scalable, end-to-end web applications that blend frontend finesse with backend strength.
-                With a recent <span class="highlight">Master’s in Computer Science from the University of Oklahoma</span>, I bring practical experience in <span class="highlight">JavaScript and Python</span>, working across frameworks like <span class="highlight">React and Django</span>.</p>
-                <p>I thrive in transforming ideas into seamless digital experiences — designing clean, responsive UIs, developing secure RESTful APIs, and deploying cloud-ready solutions with <span class="highlight">Docker and AWS</span>.</p>
-                <p>Focused on writing maintainable code and solving real-world problems, I’m now looking to contribute to <span class="highlight">innovative development teams</span> and continue growing as an engineer.</p>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a <strong>full stack developer</strong> with a passion for building scalable, end-to-end web applications that blend frontend finesse with backend strength. With a recent <strong>Master's in Computer Science from the University of Oklahoma</strong>, I bring practical experience in <strong>JavaScript and Python</strong>, working across frameworks like <strong>React and Django</strong>.</p>
+
+                <p>I thrive in transforming ideas into seamless digital experiences — designing clean, responsive UIs, developing secure RESTful APIs, and deploying cloud-ready solutions with <strong>Docker and AWS</strong>.</p>
+
+                <p>Focused on writing maintainable code and solving real-world problems, I'm now looking to contribute to <strong>innovative development teams</strong> and continue growing as an engineer.</p>
             </div>
 
-        
-    </section>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-header">
+                        <div class="highlight-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="highlight-title">Education</h3>
+                    </div>
+                    <p class="highlight-description">Master's in Computer Science<br>University of Oklahoma</p>
+                </div>
 
-   <section class="section" id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>🚀 Programming & Web Development</h3>
-                    <div class="skill-tags">
+                <div class="highlight-card">
+                    <div class="highlight-header">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="highlight-title">Core Technologies</h3>
+                    </div>
+                    <p class="highlight-description">Full stack development with modern frameworks</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-header">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="highlight-title">What I Bring</h3>
+                    </div>
+                    <p class="highlight-description">End-to-end thinking, attention to detail, and a passion for solving complex problems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+
+        <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Comprehensive expertise across development, data science, and marketing analytics</p>
+        </div>
+        <div class="skills-tab-container">
+            <!-- Tab Buttons -->
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab(event, 'developer')">
+                    Developer
+                </button>
+                <button class="tab-button" onclick="showTab(event, 'datascience')">
+                    Data Science
+                </button>
+                <button class="tab-button" onclick="showTab(event, 'marketing')">
+                    Marketing Analytics
+                </button>
+            </div>
+
+            <!-- Developer Tab -->
+            <div id="developer" class="tab-content active">
+                <div class="skills-section">
+                    <div class="skills-category">Programming:
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">C++</span>
-                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skills-section">
+
+                    <div class="skills-category"> Frontend:
                         <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">React</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Flexbox</span>
+                    </div>
+
+
+                </div>
+                <div class="skills-section">
+                    <div class="skills-category">Backend:
                         <span class="skill-tag">Django</span>
                         <span class="skill-tag">Django REST Framework</span>
                         <span class="skill-tag">RESTful API</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3>☁️ Cloud & DevOps</h3>
-                    <div class="skill-tags">
+                <div class="skills-section">
+                    <div class="skills-category">Database:
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <div class="skills-category">DevOps:
                         <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Git</span>
                     </div>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h3>📊 Data & Business Intelligence</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
+            <!-- Data Science Tab -->
+            <div id="datascience" class="tab-content">
+                <div class="skills-section">
+                    <div class="skills-category">Analytics:
                         <span class="skill-tag">Power BI</span>
                         <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Looker Studio</span>
-                        <span class="skill-tag">Mixpanel</span>
-                        <span class="skill-tag">Advanced Excel</span>
-                        <span class="skill-tag">Excel VBA</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Zoho Analytics</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3>🤖 Machine Learning & Analytics</h3>
-                    <div class="skill-tags">
+                <div class="skills-section">
+                    <div class="skills-category">Machine Learning:
                         <span class="skill-tag">Scikit-learn</span>
                         <span class="skill-tag">Feature Engineering</span>
                         <span class="skill-tag">Classification Models</span>
-                        <span class="skill-tag">A/B Testing</span>
-                        <span class="skill-tag">Regression Analysis</span>
-                        <span class="skill-tag">EDA</span>
-                        <span class="skill-tag">Statistical Modeling</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>📈 Analytics & Optimization</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Google Tag Manager</span>
-                        <span class="skill-tag">Google Analytics (GA4)</span>
-                        <span class="skill-tag">Google Optimize</span>
-                        <span class="skill-tag">Hotjar</span>
-                        <span class="skill-tag">Microsoft Clarity</span>
-                    </div>
+            </div>
+
+            <!-- Marketing Analytics Tab -->
+            <div id="marketing" class="tab-content">
+                <div class="marketing-skills">
+                    <span class="marketing-tag">Google Tag Manager (GTM)</span>
+                    <span class="marketing-tag">Google Analytics (GA4)</span>
+                    <span class="marketing-tag">Google Optimize</span>
+                    <span class="marketing-tag">Google Data Studio / Looker Studio</span>
+                    <span class="marketing-tag">Hotjar</span>
+                    <span class="marketing-tag">Mixpanel</span>
+                    <span class="marketing-tag">Microsoft Clarity</span>
+                    <span class="marketing-tag">A/B Testing</span>
                 </div>
             </div>
-        </section>
+        </div>
 
+    </section>
     <!-- Projects Section -->
     <section class="section" id="projects">
         <div class="section-header">
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">A selection of my recent development work showcasing full-stack capabilities</p>
         </div>
+
         <div class="projects-grid">
-             <div class="project-card">
+            <!-- Library Management Project-->
+            <div class="project-card">
                 <div class="project-image">
-                    <img src="assets/images/library-management-screenshot.jpg" alt="Library Management System Screenshot" class="project-screenshot">
+                    <img src="https://sruthi-pedakolimi.github.io/portfolio/assets/images/library-management-screenshot.jpg" alt="Library Management System Screenshot" class="project-screenshot">
                     <div class="project-image-overlay">
                         <div class="project-quick-actions">
                             <a href="https://splibmanagement.ccbp.tech/" class="quick-action-btn" target="_blank" title="View Live Demo">
@@ -178,7 +252,7 @@
                         <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript ES6+</span>
                         <span class="tech-tag">Bootstrap 4</span>
-                        <span class="tech-tag">Fetch API</span>           
+                        <span class="tech-tag">Fetch API</span>
                     </div>
                 </div>
                 <div class="project-body">
@@ -189,6 +263,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Ecommerce Project-->
             <div class="project-card">
                 <div class="project-image placeholder-ecommerce">
                     <div class="ecommerce-content">
@@ -223,12 +298,10 @@
                             <i class="fab fa-github"></i>
                             View Repository
                         </a>
-                    </div>  
+                    </div>
                 </div>
             </div>
-                        
-                    
-                        
+            <!-- todo Project-->
             <div class="project-card">
                 <div class="project-image placeholder-todo">
                     <div class="todo-content">
@@ -289,57 +362,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image placeholder-food">
-                    <div class="food-content">
-                        <i class="fas fa-utensils food-icon"></i>
-                        <div class="food-title">Restaurant Menu</div>
-                        <div class="food-subtitle">Responsive Website</div>
-                    </div>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="menu-dot"></div>
-                            <span>Appetizers</span>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-dot"></div>
-                            <span>Main Course</span>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-dot"></div>
-                            <span>Desserts</span>
-                        </div>
-                        <div class="menu-item">
-                            <div class="menu-dot"></div>
-                            <span>Beverages</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-store restaurant-icon"></i>
-                </div>
-                <div class="project-header">
-                    <h3 class="project-title">🍽️ Food Menu App</h3>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">Bootstrap</span>
-                        <span class="tech-tag">Responsive Design</span>
-                        <span class="tech-tag">UI/UX</span>
-                    </div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">A comprehensive restaurant website featuring an interactive food menu system with modern UI/UX design and responsive layout. Built to showcase restaurant offerings and enhance customer engagement through intuitive navigation and visual appeal.</p>
-                    <div class="project-links">
-                        <a href="https://sruthipmunch.ccbp.tech/" class="btn-project" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
-                        </a>
-                        <a href="https://github.com/Sruthi-Pedakolimi/food-menu-html-css" class="btn-project btn-project-secondary" target="_blank">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- Order Management Project-->
             <div class="project-card">
                 <div class="project-image placeholder-order">
                     <div class="order-content">
@@ -387,20 +410,188 @@
             </div>
         </div>
     </section>
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-header">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Professional journey spanning software development, data analytics, and platform management</p>
+        </div>
 
-    <!-- Footer -->
+        <div class="experience-timeline">
+            <div class="timeline-line"></div>
+
+            <!-- Software Engineer Intern - Left Side -->
+            <div class="experience-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-connector"></div>
+                <div class="experience-card" onclick="openModal('software-engineer')">
+                    <div class="experience-header">
+                        <h3 class="job-title">Software Engineer Intern</h3>
+                        <div class="company-info">
+                            <span class="company-name">PINScale Tech Pvt. Ltd.</span>
+                            <span class="duration">May 2024 - Aug 2024</span>
+                        </div>
+                        <div class="key-highlights">
+                            <span class="highlight-item">Python</span>
+                            <span class="highlight-item">JavaScript</span>
+                            <span class="highlight-item">HTML/CSS</span>
+                            <span class="highlight-item">Django</span>
+                        </div>
+                    </div>
+                    <div class="view-details-btn">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graduate Research Assistant - Right Side -->
+            <div class="experience-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-connector"></div>
+                <div class="experience-card" onclick="openModal('research-assistant')">
+                    <div class="experience-header">
+                        <h3 class="job-title">Graduate Research Assistant</h3>
+                        <div class="company-info">
+                            <span class="company-name">University of Oklahoma</span>
+                            <span class="duration">Sep 2023 - May 2025</span>
+                        </div>
+                        <div class="key-highlights">
+                            <span class="highlight-item">Python</span>
+                            <span class="highlight-item">Java Script</span>
+                            <span class="highlight-item">HTML/CSS</span>
+                            <span class="highlight-item">Django</span>
+
+                        </div>
+                    </div>
+                    <div class="view-details-btn">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senior Web Analyst - Left Side -->
+            <div class="experience-item">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-connector"></div>
+                <div class="experience-card" onclick="openModal('senior-analyst')">
+                    <div class="experience-header">
+                        <h3 class="job-title">Senior Web Analyst</h3>
+                        <div class="company-info">
+                            <span class="company-name">PINScale Tech Pvt. Ltd., India</span>
+                            <span class="duration">May 2022 - July 2023</span>
+                        </div>
+                        <div class="key-highlights">
+                            <span class="highlight-item">GA4</span>
+                            <span class="highlight-item">BigQuery</span>
+                            <span class="highlight-item">Power BI</span>
+                            <span class="highlight-item">A/B Testing</span>
+                        </div>
+                    </div>
+                    <div class="view-details-btn">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Analyst - Right Side -->
+            <div class="experience-item">
+                <div class="timeline-year">2020</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-connector"></div>
+                <div class="experience-card" onclick="openModal('web-analyst')">
+                    <div class="experience-header">
+                        <h3 class="job-title">Web Analyst</h3>
+                        <div class="company-info">
+                            <span class="company-name">ProYuga Tech Ltd., India</span>
+                            <span class="duration">Oct 2020 - Apr 2022</span>
+                        </div>
+                        <div class="key-highlights">
+                            <span class="highlight-item">GA4</span>
+                            <span class="highlight-item">SQL</span>
+                            <span class="highlight-item">GTM</span>
+                        </div>
+                    </div>
+                    <div class="view-details-btn">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senior Platform Manager - Left Side -->
+            <div class="experience-item">
+                <div class="timeline-year">2017</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-connector"></div>
+                <div class="experience-card" onclick="openModal('platform-manager')">
+                    <div class="experience-header">
+                        <h3 class="job-title">Senior Platform Manager</h3>
+                        <div class="company-info">
+                            <span class="company-name">ProYuga Tech Ltd., India</span>
+                            <span class="duration">Nov 2017 - Sep 2020</span>
+                        </div>
+                        <div class="key-highlights">
+                            <span class="highlight-item">Zoho Creator</span>
+                            <span class="highlight-item">APIs</span>
+                            <span class="highlight-item">CRM</span>
+                        </div>
+                    </div>
+                    <div class="view-details-btn">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Experience Details -->
+    <div class="modal-overlay" id="experienceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="modal-job-title" id="modalJobTitle">Job Title</h3>
+                <div class="modal-company-info">
+                    <span class="modal-company-name" id="modalCompany">Company Name</span>
+                    <span class="modal-duration" id="modalDuration">Duration</span>
+                </div>
+                <div class="modal-highlights" id="modalHighlights">
+                    <!-- Achievement highlights will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-responsibilities">
+                    <h4 class="modal-section-title">
+                        <i class="fas fa-tasks"></i>
+                        Key Responsibilities & Achievements
+                    </h4>
+                    <div id="modalResponsibilities">
+                        <!-- Responsibilities will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="modal-technologies">
+                    <h4 class="modal-section-title">
+                        <i class="fas fa-code"></i>
+                        Technologies & Tools
+                    </h4>
+                    <div class="modal-tech-tags" id="modalTechTags">
+                        <!-- Technologies will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">Ramya Sruthi Pedakolimi.</h3>
-                    <p class="footer-tagline">Full Stack Developer</p>
-                    <p class="footer-description">
-                        Building innovative solutions with modern technologies.
-                        Passionate about creating scalable web applications and data-driven insights.
-                    </p>
-                </div>
-                
                 <div class="footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
@@ -411,7 +602,7 @@
                         <li><a href="#experience">Experience</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">Technologies</h4>
                     <div class="footer-tech-grid">
@@ -423,7 +614,7 @@
                         <span class="footer-tech-item">Cloud Computing</span>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">Connect With Me</h4>
                     <div class="footer-social">
@@ -439,14 +630,14 @@
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://sruthi-pedakolimi.github.io/portfolio/assets/resume/resume.pdf" class="footer-social-link" title="Resume" download="Ramya-Sruthi-Resume.pdf" target="_blank">
+                        <a href="assets/resume/resume.pdf" class="footer-social-link" title="Resume" download="Ramya-Sruthi-Resume.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i>
                             <span>Resume</span>
                         </a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
                     <p>&copy; 2025 Ramya Sruthi Pedakolimi. All rights reserved.</p>
@@ -455,7 +646,7 @@
             </div>
         </div>
     </footer>
-    
-    <script src="js/main.js"></script>
+
 </body>
+
 </html>
